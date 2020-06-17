@@ -1,0 +1,23 @@
+ubuntu@ip-172-31-25-32:~$ cd lesson2/
+ubuntu@ip-172-31-25-32:~/lesson2$ mkdir -p {first,second}
+ubuntu@ip-172-31-25-32:~/lesson2$ ls
+first  second
+ubuntu@ip-172-31-25-32:~/lesson2$ echo "print(1)" > first/first.py
+ubuntu@ip-172-31-25-32:~/lesson2$ echo "print(2)" > second/second.py
+ubuntu@ip-172-31-25-32:~/lesson2$ python3 first/first.py 
+1
+ubuntu@ip-172-31-25-32:~/lesson2$ python3 second/second.py 
+2
+ubuntu@ip-172-31-25-32:~/lesson2$ mv second/second.py first/
+ubuntu@ip-172-31-25-32:~/lesson2$ ls first/
+first.py  second.py
+ubuntu@ip-172-31-25-32:~/lesson2$ rm -r second/
+ubuntu@ip-172-31-25-32:~/lesson2$ ls
+first
+ubuntu@ip-172-31-25-32:~/lesson2$ mv first/ first_second/
+ubuntu@ip-172-31-25-32:~/lesson2$ ls
+first_second
+ubuntu@ip-172-31-25-32:~/lesson2$ rm -rf first_second/
+ubuntu@ip-172-31-25-32:~/lesson2$ ls
+ubuntu@ip-172-31-25-32:~/lesson2$ 
+
