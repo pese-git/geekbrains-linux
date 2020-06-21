@@ -1,0 +1,11 @@
+   49  vim example.py
+   50  python3 example.py 
+   51  wc example.py 
+   52  wc -l example.py 
+   53  vim example1.py
+   54  python3 example1.py 
+   55  cat example.py example1.py 
+   56  cat example.py | grep world
+   57  cat example.py example1.py > example2.py
+   58  python3 example2.py 
+   59  cat *.py | wc -l
