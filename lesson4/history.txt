@@ -1,0 +1,39 @@
+Task 1:
+ubuntu ->
+   67  mkdir lesson4
+   68  ls -la
+   69  whoami
+   70  groups
+   71  cd lesson4
+   72  touch example.py
+   73  nano example.py 
+   74  python3 example.py 
+   75  sudo useradd  -p ****** -s /bin/bash user_new
+   76  chmod o+w example.py 
+   77  sudo su -
+
+user_new ->
+   01  python3 example.py
+   02  exit
+
+Task 2:
+ubuntu ->
+   01  sudo su -
+
+user_new ->
+   01  echo ‘print("123")’ > example.py
+   02  python3 example.py
+   03  exit
+
+Task 3:
+ubuntu ->   
+   01  sudo usermod -a -G ubuntu user_new
+   02  sudo su -
+
+user_new ->
+   01  touch example1.py
+   02  echo ‘for i in range(0,10):’ >> example1.py
+   03  echo ‘\tprint("i= " + str(i+1))’ >> example1.py
+   04  python3 example1.py
+
+
