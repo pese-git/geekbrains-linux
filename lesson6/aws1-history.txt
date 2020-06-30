@@ -1,0 +1,6 @@
+   82  sudo mkdir /data
+   83  lsblk
+   84  sudo mount /dev/xvdf /data
+   85  cat /data/test.txt 
+   86  history
+

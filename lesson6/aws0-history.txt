@@ -1,0 +1,11 @@
+   82  lsblk
+   83  sudo file –s /dev/xvdf
+   84  sudo mkfs.xfs /dev/xvdf
+   85  sudo file /dev/xvdf
+   86  sudo mkdir /data
+   87  sudo mount /dev/xvdf /data
+   88  sudo touch /data/test.txt
+   89  sudo nano /data/test.txt 
+   90  cat /data/test.txt 
+   91  history
+
