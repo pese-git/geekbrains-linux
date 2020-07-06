@@ -1,0 +1,9 @@
+task 1:
+   96  find . -type f -printf "%f\n" | grep ^t.*.py
+   
+task 2:
+   97  find . -type f -regex ".*.py" -exec grep print {} \;
+
+task 3:
+   98  uptime | sed 's/^.* up \+\(.\+\), \+[0-9]\+ \+user.*/\1/'
+   99  uptime | sed 's/^.* up \+\(.\+\) days.*, \+[0-9]\+ \+user.*/\1/'
